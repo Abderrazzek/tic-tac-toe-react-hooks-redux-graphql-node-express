@@ -1,0 +1,5 @@
+export const EMPTY_SQUARE = "";
+export const CONTINUE_PLAYING = "CONTINUE_PLAYING";
+export const SET_CURRENT_ROUND = "SET_CURRENT_ROUND";
+export const SET_X_IS_NEXT = "SET_X_IS_NEXT";
+export const SET_CURRENT_BOARD = "SET_CURRENT_BOARD";

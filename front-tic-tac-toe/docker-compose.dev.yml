@@ -1,0 +1,13 @@
+version: "3.8"
+
+services:
+  app:
+    container_name: client-tic-tac-toe
+    image: client-tic-tac-toe
+    build:
+      context: .
+      target: development
+    volumes:
+      - ./src:/front-tic-tac-toe/src
+    ports:
+      - 3000:3000

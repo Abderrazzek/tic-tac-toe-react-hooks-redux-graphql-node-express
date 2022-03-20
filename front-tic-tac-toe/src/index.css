@@ -1,0 +1,190 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+#root {
+  width: 100%;
+}
+
+body {
+  background-color: #609ea1;
+  color: white;
+  font-family: "Lato", sans-serif;
+  display: flex;
+  justify-content: center;
+  min-height: 100%;
+  width: 100%;
+  padding: 2rem;
+}
+.container {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  align-items: center;
+}
+h1 {
+  text-align: center;
+  text-transform: uppercase;
+}
+hr {
+  width: 100%;
+  /* min-s */
+  margin-top: 0.6rem;
+  border-top: 2px dotted#deb987;
+  border-bottom: 0px;
+  border-radius: 2px;
+}
+
+.subtitle {
+  padding: 2rem;
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 22px;
+}
+
+.board {
+  background: #deb987;
+  width: 50vh;
+  height: 50vh;
+  display: grid;
+  grid-template: repeat(3, 1fr) / repeat(3, 1fr);
+  gap: 0.3rem;
+}
+
+.bold {
+  font-weight: bold;
+}
+
+.squares {
+  background: #609ea1;
+  border: none;
+  font-size: 4rem;
+  cursor: pointer;
+  outline: none;
+}
+
+.X {
+  color: #ffffff;
+}
+.O {
+  color: #026165;
+}
+
+.bottom-wrapper {
+  margin-top: 1rem;
+  display: flex;
+  justify-content: center;
+}
+
+.bottom-wrapper button {
+  background-color: #609ea1;
+  color: white;
+  font-size: 22px;
+  border: 1px solid white;
+  outline: none;
+  cursor: pointer;
+  padding: 0.5rem;
+  margin: 0.5rem 1rem;
+  text-transform: uppercase;
+}
+
+.page-container {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  width: 100%;
+}
+
+.opacity {
+  opacity: 0.6;
+}
+
+.loader {
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  justify-items: center;
+  transform: translate(-50%, -50%);
+  border: 6px solid #f3f3f3;
+  border-top: 6px solid #026165;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  animation: spin 2s linear infinite;
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.large-text {
+  font-size: 72px;
+  font-weight: bold;
+  text-align: center;
+}
+
+.sub-large-text {
+  font-size: 22px;
+}
+
+@media only screen and (max-width: 300px) {
+  .board {
+    width: 100vw;
+    height: 100vw;
+  }
+  .subtitle {
+    padding: 1rem;
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 14px;
+  }
+  h1 {
+    font-size: 18px;
+  }
+  .squares {
+    font-size: 60px;
+  }
+  .large-text {
+    font-size: 34px;
+  }
+
+  .sub-large-text {
+    font-size: 16px;
+  }
+  .loader {
+    border: 4px solid #f3f3f3;
+    border-top: 4px solid #026165;
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+  }
+  .bottom-wrapper button {
+    font-size: 14px;
+    padding: 0.3rem;
+    margin: 0.3rem 0.7rem;
+    text-transform: uppercase;
+  }
+}
+
+@media only screen and (max-width: 250px) {
+  .squares {
+    font-size: 40px;
+  }
+}
+
+@media only screen and (max-width: 250px) {
+  .squares {
+    font-size: 20px;
+  }
+}
