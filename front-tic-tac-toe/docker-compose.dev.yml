@@ -11,3 +11,7 @@ services:
       - ./src:/front-tic-tac-toe/src
     ports:
       - 3000:3000
+    env_file:
+      - .env
+      - .env.dev
+      - .env.prod
