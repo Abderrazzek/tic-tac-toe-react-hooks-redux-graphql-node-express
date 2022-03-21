@@ -6,7 +6,7 @@ import React from "react";
 import { CONTINUE_PLAYING, EMPTY_SQUARE } from "../constants";
 import { calculateWinner } from "../services/ApiServices";
 import * as actions from "../store/actions/gameAction";
-import Board from "./Board";
+import Board from "./board/Board";
 
 const Game = () => {
   const dispatch = useDispatch();

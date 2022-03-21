@@ -1,0 +1,65 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`matches snapshot 1`] = `
+<div
+  className="board"
+  data-testid="board"
+>
+  <button
+    className="squares"
+    data-testid="square"
+    onClick={[Function]}
+  >
+    
+  </button>
+  <button
+    className="squares X"
+    data-testid="square"
+    onClick={[Function]}
+  >
+    X
+  </button>
+  <button
+    className="squares O"
+    data-testid="square"
+    onClick={[Function]}
+  >
+    O
+  </button>
+  <button
+    className="squares"
+    data-testid="square"
+    onClick={[Function]}
+  >
+    
+  </button>
+  <button
+    className="squares X"
+    data-testid="square"
+    onClick={[Function]}
+  >
+    X
+  </button>
+  <button
+    className="squares X"
+    data-testid="square"
+    onClick={[Function]}
+  >
+    X
+  </button>
+  <button
+    className="squares O"
+    data-testid="square"
+    onClick={[Function]}
+  >
+    O
+  </button>
+  <button
+    className="squares"
+    data-testid="square"
+    onClick={[Function]}
+  >
+    
+  </button>
+</div>
+`;
